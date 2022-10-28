@@ -1,0 +1,64 @@
+import { Link } from 'gatsby'
+import { FiInfo } from 'react-icons/fi'
+import { Counter, LikeButton } from '../../components/Complete'
+
+## my first mdx file
+
+**I'm baby photo booth banh mi gluten-free next level glossier kogi 8-bit master cleanse coloring book stumptown polaroid vegan tumeric biodiesel listicle.** Pitchfork blog hexagon live-edge crucifix woke +1 vexillologist. Man bun gluten-free yuccie bushwick trust fund jianbing lumbersexual tumeric you probably haven't heard of them fanny pack. Bespoke quinoa bodega boys ethical vegan dreamcatcher echo park actually mlkshk PBR&B. Bruh forage drinking vinegar viral four loko. VHS authentic shaman, asymmetrical twee drinking vinegar schlitz yes plz celiac blog tumblr fit. _Marfa chambray hella VHS JOMO synth fam._
+
+<div className="code">
+
+```js
+const firstName = 'Clayton'
+const lastName = 'Dewey'
+```
+
+</div>
+
+<div className="nice-text">
+
+<h3>Nice text </h3>
+
+<FiInfo className="nice-text-icon" />
+
+I'm baby retro schlitz 8-bit sriracha. Flannel drinking vinegar microdosing taiyaki. Tumeric celiac keffiyeh organic iPhone, hella PBR&B narwhal selfies af raclette microdosing subway tile shaman occupy. Poke cray shaman irony fit try-hard drinking vinegar taiyaki paleo yuccie put a bird on it tattooed banjo street art. Pinterest forage echo park beard meh. Fashion axe literally taiyaki vibecession blue bottle tonx master cleanse distillery cornhole. Retro paleo sus, gentrify knausgaard direct trade next level copper mug brunch.
+
+</div>
+
+<h2>React Components </h2>
+
+<Counter />
+
+<div className="code">
+
+```jsx
+import React from 'react'
+import styled from 'styled-components'
+import { AiOutlineLike } from 'react-icons/ai'
+const LikeButton = () => {
+  const [value, setValue] = React.useState(0)
+  return (
+    <Wrapper>
+      <div>
+        <button onClick={() => setValue(value + 1)}>
+          <AiOutlineLike />
+        </button>
+        <p>
+          Liked the post?
+          <br />
+          Click thumbs up few times
+        </p>
+      </div>
+      <span>+{value}</span>
+    </Wrapper>
+  )
+}
+```
+
+</div>
+
+<LikeButton />
+
+<Link to="/posts" className="btn center-btn">
+  all posts
+</Link>
